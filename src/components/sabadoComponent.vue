@@ -1,7 +1,7 @@
 <template>
-  <div class="hero">
+      <div class="hero">
     <video autoplay loop muted plays-inline class="back-video">
-      <source src="./assets/videofundo.mp4" type="video/mp4" />
+      <source src="/assets/Metaverso.mp4" type="video/mp4"/>
     </video>
 
     <nav>
@@ -13,21 +13,24 @@
     </nav>
 
     <div class="content">
-      <h1 style="font-size: 40px; color: rgb(226, 222, 228); font-weight: 600; margin-top: 350px; -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: rgb(27, 26, 27);">Você está prestes a revolucionar<br>meios de comunicação da sua empresa!</h1>
-      <router-link to="/sabadoComponent">Entrar</router-link>
+      <h1>
+  Domingo
+      </h1>
+      <a href="#"> Viver é melhor que sonhar </a>
     </div>
   </div>
+
 </template>
 
-<script>
-</script>
+
+<script></script>
 
 <style>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif; /* Corrija a fonte para "Poppins" */
+  font-family: "poopins", sans-serif;
 }
 .hero {
   width: 100%;
@@ -71,12 +74,12 @@ nav ul li a {
   text-align: center;
 }
 .content h1 {
-  font-size: 40px;
-  color: rgb(226, 222, 228);
+  font-size: 160px;
+  color: #fff;
   font-weight: 600;
-  margin-top: 50px; /* Reduzido o valor de margin-top */
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: rgb(27, 26, 27);
+  margin-top: 350px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgb(245, 236, 236);
 }
 
 .content a {
@@ -84,7 +87,7 @@ nav ul li a {
   display: inline-block;
   color: #fff;
   font-size: 24px;
-  border: 2px solid rgb(169, 10, 231);
+  border: 2px solid #fff;
   padding: 14px 70px;
   border-radius: 50px;
   margin-top: 50px;

@@ -1,8 +1,24 @@
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import App from './App.vue';
+import sabadoComponent from "@/components/sabadoComponent.vue"
 
-Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+const routes = [
+  // Outras rotas
+  {
+    name: "sabadoComponent",
+    path: '/sabadoComponent',
+    component: sabadoComponent,
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+const app = createApp(App);
+app.use(router); // Registre o router no aplicativo Vue
+app.mount('#app');
+export default router;
